@@ -4,4 +4,4 @@
 
 <h1> What the app looks like </h1>
 
-<img src="img/screenshot.png">
+<img src="/public/img/screenshot.png">
