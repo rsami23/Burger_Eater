@@ -5,3 +5,13 @@
 <h1> What the app looks like </h1>
 
 <img src="/public/img/screenshot.png">
+
+<h1> Technology Used </h1>
+<ul>
+    <li>SQL</li>
+    <li>HandleBars</li>
+    <li>Node.js</li>
+    <li>Express</li>
+    <li>Body-Parser</li>
+    <li>Bootstrap</li>
+</ul>
