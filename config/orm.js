@@ -2,7 +2,7 @@
 var connection = require("../config/connection.js");
 
 // HELPER FUNCTION TO GENERATE MYSQL SYNTAX
-function printQuestionmarks(num) {
+function printQuestionMarks(num) {
     var arr = [];
 
     for (var i = 0; i < num; i++) {
@@ -28,7 +28,7 @@ function objToSql(ob) {
 // ORM METHODS
 var orm = {
     selectAll: function(tableInput, cb) {
-        var queryString = "SELECT * FROM " + tableInput;
+        var queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function(err, result) {
             if (err) {
                 throw err;
@@ -48,10 +48,10 @@ var orm = {
         queryString += ") ";
         console.log(queryString);
 
-        var vals = {
-            burger_name: burger_name,
-            devoured: false
-        };
+        // var vals = {
+        //     burger_name: cols.burger_name,
+        //     devoured: 0
+        // };
 
         connection.query(queryString, vals, function(err, result) {
             if (err) {

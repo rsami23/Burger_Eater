@@ -7,9 +7,12 @@
         <div class="card" id="add-burger">
             <div class="card-body">
                 <h2 class="text-center">Add A Burger</h2>
-                <div class="form-group">
-                    <input type="burger" class="form-control" id="newBurger">
-                    <button type="button" class="btn btn-danger mt-2">Add Burger</button>
+                <div class="form-group" id="newBurger">
+                    <form action="/api/burgers" method="POST">
+                        <input type="text" class="form-control" name="burger_name" value="">
+                        <button type="submit" class="btn btn-danger mt-2">Add Burger</button>
+                    </form>
+                    
                 </div>
             </div>
         </div>
