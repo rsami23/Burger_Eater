@@ -1,0 +1,53 @@
+<div class="jumbotron">
+    <h1 class="text-center display-3">Eat-Da-Burger</h1>
+</div>
+
+<body>
+    <div class="container">
+        <div class="card" id="add-burger">
+            <div class="card-body">
+                <h2 class="text-center">Add A Burger</h2>
+                <div class="form-group">
+                    <input type="burger" class="form-control" id="newBurger">
+                    <button type="button" class="btn btn-danger mt-2">Add Burger</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card" id="available">
+                    <div class="card-body">
+                        <h2 class="text-center">Burgers Available</h2>
+                        <hr>
+                            <ul>
+                                {{#each burgers}}
+                                    {{#unless devoured}}
+                                        {{> burger-block devoured=false}}
+                                     {{/unless}}
+                                {{/each}}
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card"  id="eaten">
+                    <div class="card-body">
+                        <h2 class="text-center">Burgers Eaten</h2>
+                        <hr>
+                        <ul>
+                            {{#each burgers}}
+                                {{#if devoured}}
+                                    <li>
+                                        {{this.burger_name}}
+                                    </li>
+                                    
+                                {{/if}}
+                            {{/each}}
+                        </ul>       
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>
+</body>

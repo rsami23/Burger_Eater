@@ -1,0 +1,35 @@
+.jumbotron {
+    background-color: #D42D24;
+    color: white;
+    border-bottom: 3px solid white;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#eaten {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#available {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#add-burger {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+body {
+    background-image: url("/img/bur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-family: 'Nanum Gothic', sans-serif;
+}
